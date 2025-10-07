@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Tembo Resort & Restaurant Kasarani for reservations and inquiries. We're here to make your stay in Nairobi memorable.">
+    <meta name="keywords" content="Contact Tembo Resort & Restaurant, Hotel Contact, Kasarani Hotel Phone, Nairobi Hotel Email, Hotel Location">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Tembo Resort & Restaurant Kasarani | Get in Touch</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        /* Contact Information Styles */
+        .contact-info {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact-info-content {
+            flex: 1;
+            overflow-y: auto;
+        }
+        
+        .contact-info h2 {
+            color: #1a1a1a;
+            font-size: 28px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .contact-intro {
+            color: #666;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        
+        .contact-detail {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 6px;
+        }
+        
+        .contact-detail h4 {
+            color: #1a1a1a;
+            font-size: 16px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-detail h4 i {
+            margin-right: 8px;
+            color: #dfa974;
+        }
+        
+        .contact-detail p {
+            color: #555;
+            margin: 0 0 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .social-links {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .social-links h4 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        
+        .social-icons a {
+            width: 36px;
+            height: 36px;
+            background: #f5f5f5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background: #dfa974;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        
+        /* Contact Form Styles */
+        .contact-form-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .contact-form-container h2 {
+            color: #1a1a1a;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .form-intro {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        .form-control {
+            width: 100%;
+            height: 50px;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: #dfa974;
+            box-shadow: 0 0 0 0.2rem rgba(223, 169, 116, 0.25);
+            outline: none;
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .form-check {
+            margin-top: 10px;
+        }
+        
+        .form-check-label {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .form-check-input {
+            margin-top: 5px;
+            transform: scale(0.8);
+            margin-left: 5px;
+        }
+        
+        .form-check {
+            display: flex;
+            align-items: flex-start;
+            padding-left: 70px;
+            margin-left: 30px;
+        }
+        
+        .form-check-label {
+            margin-left: 5px;
+            line-height: 1.4;
+        }
+        
+        .form-check-input:checked {
+            background-color: #dfa974;
+            border-color: #dfa974;
+        }
+        
+        .invalid-feedback {
+            display: none;
+            width: 100%;
+            margin-top: 0.25rem;
+            font-size: 12px;
+            color: #e74c3c;
+        }
+        
+        .was-validated .form-control:invalid ~ .invalid-feedback,
+        .was-validated .form-check-input:invalid ~ .invalid-feedback {
+            display: block;
+        }
+        
+        .was-validated .form-control:invalid,
+        .form-control.is-invalid {
+            border-color: #e74c3c;
+            padding-right: calc(1.5em + 0.75rem);
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23e74c3c'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23e74c3c' stroke='none'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right calc(0.375em + 0.1875rem) center;
+            background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+        }
+        
+        .primary-btn.submit-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 30px;
+            background: #dfa974;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .primary-btn.submit-btn:hover {
+            background: #d49b62;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-text {
+            margin-right: 10px;
+        }
+        
+        .btn-icon {
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+        
+        .primary-btn.submit-btn:hover .btn-icon {
+            transform: translateX(3px);
+        }
+        
+        .form-message {
+            display: none;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .form-message.success {
+            display: block;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .form-message.error {
+            display: block;
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        @media (max-width: 767px) {
+            .contact-form-container {
+                padding: 20px;
+            }
+            
+            .primary-btn.submit-btn {
+                width: 100%;
+            }
+        }
+        
+        /* Hero Section Styles */
+        .hero-section.contact-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+            background-size: cover;
+            padding: 120px 0;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-text h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .hero-text p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section.contact-hero {
+                padding: 80px 0;
+            }
+            
+            .hero-text h1 {
+                font-size: 36px;
+            }
+            
+            .hero-text p {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+        <i class="icon_menu"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="icon_close"></i>
+        </div>
+        <div class="search-icon search-switch">
+            <i class="icon_search"></i>
+        </div>
+        <div class="header-configure-area">
+            <div class="language-option">
+                <img src="img/flag.jpg" alt="">
+                <span>EN <i class="fa fa-angle-down"></i></span>
+                <div class="flag-dropdown">
+                    <ul>
+                        <li><a href="#">Zi</a></li>
+                        <li><a href="#">Fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="bk-btn">Booking Now</a>
+        </div>
+        <nav class="mainmenu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./rooms.html">Rooms</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./pages.html">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./room-details.html">Room Details</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                        <li><a href="#">Family Room</a></li>
+                        <li><a href="#">Premium Room</a></li>
+                    </ul>
+                </li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./blog.html">News</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <ul class="top-widget">
+            <li><i class="fa fa-phone"></i> (12) 345 67890</li>
+            <li><i class="fa fa-envelope"></i> info.colorlib@gmail.com</li>
+        </ul>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section header-normal">
+        <div class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="tn-left">
+                            <li><i class="fa fa-phone"></i> +254 729 390 880 / +254 733 221 519</li>
+                            <li><i class="fa fa-envelope"></i> sales@temboresort.co.ke</li>
+                            <li><i class="fa fa-map-marker"></i> Kasarani Road, Nairobi, Kenya</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tn-right">
+                            <div class="top-social">
+                                <a href="https://www.facebook.com/temboresort" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/temboresort" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.tripadvisor.com/Hotel_Review-g294207-d12345678-Stardom_Hotel_Kasarani-Nairobi.html" target="_blank"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="https://www.instagram.com/temboresort" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <a href="contact.html" class="bk-btn">Book Now</a>
+                            <div class="language-option">
+                                <img src="https://flagcdn.com/24x18/ke.png" srcset="https://flagcdn.com/48x36/ke.png 2x, https://flagcdn.com/72x54/ke.png 3x" width="24" height="18" alt="Kenya">
+                                <span>EN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <h2 style="color: #dfa974; font-size: 32px; font-weight: 700; margin: 0;">TEMBO RESORT</h2>
+                                <p style="color: #fff; font-size: 12px; margin: 0; letter-spacing: 2px;">KASARANI, NAIROBI</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <nav class="mainmenu">
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./rooms.html">Rooms & Suites</a></li>
+                                    <li><a href="./about-us.html">About Us</a></li>
+                                    <li><a href="#">Services</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Restaurant & Bar</a></li>
+                                            <li><a href="#">Conference Facilities</a></li>
+                                            <li><a href="#">Outside Catering</a></li>
+                                            <li><a href="#">Airport Transfers</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./gallery.html">Gallery</a></li>
+                                    <li><a href="./blog.html">News & Events</a></li>
+                                    <li class="active"><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-right search-switch">
+                                <i class="icon_search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero-section contact-hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="hero-text">
+                        <h1>Get In Touch</h1>
+                        <p>We're here to help and answer any questions you might have. We look forward to hearing from you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Contact Section Begin -->
+    <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <div class="contact-info-content">
+                            <h2>Contact Information</h2>
+                            <p class="contact-intro">We're here to assist you with your booking and answer any questions you may have about your stay at Stardom Hotel Kasarani.</p>
+                            
+                            <div class="contact-detail">
+                                <h4><i class="fa fa-map-marker"></i> Our Location</h4>
+                                <p>Kasarani Road, Nairobi, Kenya</p>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <h4><i class="fa fa-phone"></i> Phone Numbers</h4>
+                                <p>+254 729 390 880</p>
+                                <p>+254 733 221 519</p>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <h4><i class="fa fa-envelope"></i> Email Address</h4>
+                                <p>sales@temboresort.co.ke</p>
+                                <p>info@temboresort.co.ke</p>
+                            </div>
+                            
+                            <div class="contact-detail">
+                                <h4><i class="fa fa-clock-o"></i> Business Hours</h4>
+                                <p>24/7 Reception</p>
+                                <p>Check-in: 2:00 PM | Check-out: 11:00 AM</p>
+                                <p>Restaurant: 6:30 AM - 10:30 PM</p>
+                                <p>Bar: 10:00 AM - 11:00 PM</p>
+                            </div>
+                            
+                            <div class="social-links">
+                                <h4>Connect With Us</h4>
+                                <div class="social-icons">
+                                    <a href="https://www.facebook.com/temboresort" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://twitter.com/temboresort" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/temboresort" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://www.tripadvisor.com" target="_blank"><i class="fa fa-tripadvisor"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 offset-lg-1">
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <p class="form-intro">Fill out the form below and our team will get back to you within 24 hours.</p>
+                        
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-message"></div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="name">Full Name <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                    <div class="invalid-feedback">Please enter your name</div>
+                                </div>
+                                
+                                <div class="col-md-6 form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                    <div class="invalid-feedback">Please enter a valid email</div>
+                                </div>
+                                
+                                <div class="col-md-6 form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control">
+                                </div>
+                                
+                                <div class="col-md-6 form-group">
+                                    <label for="subject">Subject <span class="required">*</span></label>
+                                    <select id="subject" name="subject" class="form-control" required>
+                                        <option value="" disabled selected>Select a subject</option>
+                                        <option value="reservation">Reservation Inquiry</option>
+                                        <option value="event">Event Booking</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a subject</div>
+                                </div>
+                                
+                                <div class="col-12 form-group">
+                                    <label for="message">Your Message <span class="required">*</span></label>
+                                    <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
+                                    <div class="invalid-feedback">Please enter your message</div>
+                                </div>
+                                
+<div class="col-12 text-center">
+                                    <button type="submit" class="primary-btn submit-btn">
+                                        <span class="btn-text">Send Message</span>
+                                        <span class="btn-icon"><i class="fa fa-paper-plane"></i></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3993586739913!2d36.90401431585905!3d-1.2214396359999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0c5d1f7a3a7b%3A0x3c9e2f3f2f3f2f3f!2sStardom%20Hotel%20Kasarani!5e0!3m2!1sen!2ske!4v1643723459149!5m2!1sen!2ske"
+                    height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ft-about">
+                            <div class="logo">
+                                <a href="#">
+                                    <h2 style="color: #dfa974; font-size: 28px; font-weight: 700; margin: 0 0 10px 0;">TEMBO RESORT</h2>
+                                    <p style="color: #aaa; font-size: 12px; margin: 0; letter-spacing: 2px;">KASARANI, NAIROBI</p>
+                                </a>
+                            </div>
+                            <p>Experience luxury and comfort at Stardom Hotel, your premier destination in Nairobi. We offer exceptional hospitality, exquisite dining, and state-of-the-art facilities for both business and leisure travelers.</p>
+                            <div class="fa-social">
+                                <a href="https://www.facebook.com/temboresort" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="https://twitter.com/temboresort" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.tripadvisor.com/Hotel_Review-g294207-d12345678-Stardom_Hotel_Kasarani-Nairobi.html" target="_blank"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="https://www.instagram.com/temboresort" target="_blank"><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/user/temboresort" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-contact">
+                            <h6>Contact Us</h6>
+                            <ul>
+                                <li><i class="fa fa-phone"></i> +254 729 390 880 / +254 733 221 519</li>
+                                <li><i class="fa fa-envelope"></i> sales@temboresort.co.ke</li>
+                                <li><i class="fa fa-map-marker"></i> Kasarani Road, Nairobi, Kenya</li>
+                                <li><i class="fa fa-clock-o"></i> Open 24/7</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-newslatter">
+                            <h3>Newsletter</h3>
+                            <p>Subscribe to our newsletter for special offers, events, and updates from Stardom Hotel.</p>
+                            <form action="#" class="fn-form">
+                                <input type="email" placeholder="Your Email Address" required>
+                                <button type="submit"><i class="fa fa-send"></i> Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="co-text"><p>&copy; <script>document.write(new Date().getFullYear());</script> Stardom Hotel Kasarani. All Rights Reserved. 
+  <span style="display: block; margin-top: 5px; font-size: 12px;">Designed by <a href="https://novus-studios.vercel.app" target="_blank" style="color: #dfa974;">Novus Studios</a></span></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Contact Form Validation -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contactForm');
+        const formMessage = document.querySelector('.form-message');
+        
+        // Form submission handler
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Check form validity
+            if (!form.checkValidity()) {
+                event.stopPropagation();
+                form.classList.add('was-validated');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const btnText = submitBtn.querySelector('.btn-text');
+            const originalBtnText = btnText.textContent;
+            
+            submitBtn.disabled = true;
+            btnText.textContent = 'Sending...';
+            
+            // Simulate form submission (replace with actual AJAX call)
+            setTimeout(function() {
+                // Reset form
+                form.reset();
+                form.classList.remove('was-validated');
+                
+                // Show success message
+                showFormMessage('Thank you for your message! We will get back to you soon.', 'success');
+                
+                // Reset button state
+                submitBtn.disabled = false;
+                btnText.textContent = originalBtnText;
+                
+                // Scroll to message
+                formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 1500);
+        });
+        
+        // Show form message
+        function showFormMessage(message, type) {
+            formMessage.textContent = message;
+            formMessage.className = 'form-message ' + type;
+            
+            // Hide message after 5 seconds
+            setTimeout(function() {
+                formMessage.style.opacity = '1';
+                setTimeout(function() {
+                    formMessage.style.opacity = '0';
+                    setTimeout(function() {
+                        formMessage.className = 'form-message';
+                        formMessage.style.opacity = '1';
+                    }, 300);
+                }, 5000);
+            }, 100);
+        }
+        
+        // Add input event listeners for real-time validation
+        const formInputs = form.querySelectorAll('input, textarea, select');
+        formInputs.forEach(function(input) {
+            input.addEventListener('input', function() {
+                if (this.checkValidity()) {
+                    this.classList.remove('is-invalid');
+                } else {
+                    this.classList.add('is-invalid');
+                }
+            });
+        });
+    });
+    </script>
+</body>
+
+</html>

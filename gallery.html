@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore the luxurious Tembo Resort & Restaurant Kasarani through our photo gallery. Discover our elegant rooms, facilities, and beautiful surroundings.">
+    <meta name="keywords" content="Tembo Resort & Restaurant Gallery, Hotel Photos, Kasarani Hotel Images, Luxury Hotel Pictures, Nairobi Hotel Gallery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GALLERY - TEMBO RESORT & RESTAURANT KASARANI</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <style>
+        /* Gallery Section */
+        .gallery-section {
+            padding: 100px 0;
+            background: #f9f9f9;
+        }
+        
+        .gallery-filter {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        
+        .gallery-filter button {
+            color: #19191a;
+            font-size: 18px;
+            font-weight: 600;
+            background: transparent;
+            border: none;
+            margin: 0 15px;
+            padding: 5px 0;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+        }
+        
+        .gallery-filter button:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 2px;
+            background: #dfa974;
+            left: 0;
+            bottom: 0;
+            transition: all 0.3s;
+        }
+        
+        .gallery-filter button:hover,
+        .gallery-filter button.active {
+            color: #dfa974;
+        }
+        
+        .gallery-filter button:hover:after,
+        .gallery-filter button.active:after {
+            width: 100%;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 300px;
+        }
+        
+        .gallery-item.portrait {
+            height: 600px;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: all 0.5s ease;
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-overlay a {
+            color: #fff;
+            font-size: 24px;
+            width: 50px;
+            height: 50px;
+            background: #dfa974;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+        
+        .gallery-overlay a:hover {
+            background: #d19b60;
+            transform: scale(1.1);
+        }
+        
+        @media (max-width: 991px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            
+            .gallery-filter button {
+                margin: 0 8px 10px;
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open">
+        <i class="icon_menu"></i>
+    </div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="icon_close"></i>
+        </div>
+        <div class="search-icon search-switch">
+            <i class="icon_search"></i>
+        </div>
+        <div class="header-configure-area">
+            <div class="language-option">
+                <img src="img/flag.jpg" alt="">
+                <span>EN <i class="fa fa-angle-down"></i></span>
+                <div class="flag-dropdown">
+                    <ul>
+                        <li><a href="#">Zi</a></li>
+                        <li><a href="#">Fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="bk-btn">Booking Now</a>
+        </div>
+        <nav class="mainmenu mobile-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./rooms.html">Rooms</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./pages.html">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./room-details.html">Room Details</a></li>
+                        <li><a href="#">Deluxe Room</a></li>
+                        <li><a href="#">Family Room</a></li>
+                        <li><a href="#">Premium Room</a></li>
+                    </ul>
+                </li>
+                <li class="active"><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./blog.html">News</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <ul class="top-widget">
+            <li><i class="fa fa-phone"></i> +254 729 390 880 / +254 733 221 519</li>
+            <li><i class="fa fa-envelope"></i> info@temboresort.co.ke</li>
+        </ul>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="tn-left">
+                            <li><i class="fa fa-phone"></i> +254 729 390 880 / +254 733 221 519</li>
+                            <li><i class="fa fa-envelope"></i> info@temboresort.co.ke</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tn-right">
+                            <div class="top-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <a href="#" class="bk-btn">Booking Now</a>
+                            <div class="language-option">
+                                <img src="img/flag.jpg" alt="">
+                                <span>EN <i class="fa fa-angle-down"></i></span>
+                                <div class="flag-dropdown">
+                                    <ul>
+                                        <li><a href="#">Zi</a></li>
+                                        <li><a href="#">Fr</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <h4>STARDOM HOTEL</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <nav class="mainmenu">
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./rooms.html">Rooms</a></li>
+                                    <li><a href="./about-us.html">About Us</a></li>
+                                    <li><a href="./pages.html">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./room-details.html">Room Details</a></li>
+                                            <li><a href="#">Deluxe Room</a></li>
+                                            <li><a href="#">Family Room</a></li>
+                                            <li><a href="#">Premium Room</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="active"><a href="./gallery.html">Gallery</a></li>
+                                    <li><a href="./blog.html">News</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-right search-switch">
+                                <i class="icon_search"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Gallery Section Begin -->
+    <section class="gallery-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our Gallery</span>
+                        <h2>Discover Our Hotel</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-filter">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="rooms">Rooms</button>
+                <button data-filter="restaurant">Restaurant</button>
+                <button data-filter="pool">Pool Area</button>
+                <button data-filter="events">Events</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Room Images -->
+                <!-- Room Images -->
+                <div class="gallery-item portrait" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Luxury Room">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item landscape" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1582719471384-894e7cabfabb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Deluxe Room">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1582719471384-894e7cabfabb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item landscape" data-category="restaurant">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Restaurant">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item portrait" data-category="pool">
+                    <img src="https://images.unsplash.com/photo-1552733407-5d5c46c0bb0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Swimming Pool">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1552733407-5d5c46c0bb0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item landscape" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1540317580384-e5d501763122?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Event Space">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1540317580384-e5d501763122?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item portrait" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Suite">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item landscape" data-category="restaurant">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Dining Area">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item portrait" data-category="pool">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Pool Side">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item landscape" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1542625251-8f6de4c5c5dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Conference Room">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1542625251-8f6de4c5c5dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item landscape" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Presidential Suite">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item portrait" data-category="restaurant">
+                    <img src="https://images.unsplash.com/photo-1555396273-2c678d50c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Bar Area">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1555396273-2c678d50c7af?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item landscape" data-category="pool">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Pool Bar">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Additional Room Images -->
+                <div class="gallery-item portrait" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1590490359682-7e9a8f9a253f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Executive Suite">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1590490359682-7e9a8f9a253f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item landscape" data-category="restaurant">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Outdoor Dining">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item portrait" data-category="pool">
+                    <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Pool at Night">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item landscape" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Wedding Venue">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item portrait" data-category="rooms">
+                    <img src="https://images.unsplash.com/photo-1590490366-6d998fa88de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="Family Suite">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1590490366-6d998fa88de0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item landscape" data-category="restaurant">
+                    <img src="https://images.unsplash.com/photo-1555396273-63d5673f0a31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Breakfast Buffet">
+                    <div class="gallery-overlay">
+                        <a href="https://images.unsplash.com/photo-1555396273-63d5673f0a31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item portrait" data-category="pool">
+                    <img src="img/pool/pool-5.jpg" alt="Poolside Lounge">
+                    <div class="gallery-overlay">
+                        <a href="img/pool/pool-5.jpg" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item landscape" data-category="events">
+                    <img src="img/events/conference-1.jpg" alt="Conference Setup">
+                    <div class="gallery-overlay">
+                        <a href="img/events/conference-1.jpg" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item portrait" data-category="rooms">
+                    <img src="img/room/room-b7.jpg" alt="Honeymoon Suite">
+                    <div class="gallery-overlay">
+                        <a href="img/room/room-b7.jpg" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery-item landscape" data-category="restaurant">
+                    <img src="img/restaurant/bar-1.jpg" alt="Luxury Bar">
+                    <div class="gallery-overlay">
+                        <a href="img/restaurant/bar-1.jpg" class="image-popup">
+                            <i class="fa fa-search-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ft-about">
+                            <div class="logo">
+                                <a href="#">
+                                    <h4>STARDOM HOTEL</h4>
+                                </a>
+                            </div>
+                            <p>Experience luxury and comfort at Stardom Hotel Kasarani, Nairobi's premier destination for both business and leisure travelers.</p>
+                            <div class="fa-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-contact">
+                            <h6>Contact Us</h6>
+                            <ul>
+                                <li>Kasarani, Nairobi, Kenya</li>
+                                <li>+254 729 390 880</li>
+                                <li>+254 733 221 519</li>
+                                <li>info@temboresort.co.ke</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-newslatter">
+                            <h6>Newsletter</h6>
+                            <p>Subscribe to our newsletter for special offers and updates.</p>
+                            <form action="#" class="fn-form">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Tembo Resort. All Rights Reserved.</p>
+                        <span style="display: block; margin-top: 5px; font-size: 12px;">Designed by <a href="https://novus-studios.vercel.app" target="_blank" style="color: #dfa974;">Novus Studios</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+{{ ... }}
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize when document is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize AOS animation if available
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 1000,
+                    once: true
+                });
+            }
+            
+            // Initialize image popup using Magnific Popup if available
+            if (typeof $.fn.magnificPopup !== 'undefined') {
+                $('.image-popup').magnificPopup({
+                    type: 'image',
+                    gallery: {
+                        enabled: true
+                    },
+                    zoom: {
+                        enabled: true,
+                        duration: 300,
+                        easing: 'ease-in-out',
+                        opener: function(openerElement) {
+                            return openerElement.is('img') ? openerElement : openerElement.find('img');
+                        }
+                    }
+                });
+            }
+            
+            // Gallery filter functionality
+            const filterButtons = document.querySelectorAll('.gallery-filter button');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            // Add click event to filter buttons
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            // Add fade in animation
+                            item.style.animation = 'fadeIn 0.5s ease';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Add animation on scroll
+            const animateOnScroll = function() {
+                const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 4);
+                galleryItems.forEach(item => {
+                    if (windowTop > item.offsetTop) {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+            
+            // Initial animation for gallery items
+            galleryItems.forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(20px)';
+                item.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+                
+                // Trigger reflow
+                void item.offsetWidth;
+                
+                // Start animation
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+            });
+            
+            // Add scroll event listener
+            window.addEventListener('scroll', animateOnScroll);
+            
+            // Initial check in case items are already in viewport
+            animateOnScroll();
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
