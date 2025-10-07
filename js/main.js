@@ -1,6 +1,6 @@
 /*  ---------------------------------------------------
-    Template Name: Stardom Hotel
-    Description: Stardom Hotel HTML Template
+    Template Name: Tembo Resort
+    Description: Tembo Resort HTML Template
     Author: Colorlib
     Author URI: https://colorlib.com
     Version: 1.0
